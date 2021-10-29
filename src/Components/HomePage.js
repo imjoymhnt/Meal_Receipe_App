@@ -1,4 +1,5 @@
 import List from './Categories/List'
+import Navbar from "./TopNav/Navbar"
 
 
 const HomePage = () => {
@@ -6,6 +7,7 @@ const HomePage = () => {
 
     return (
         <div>
+            <Navbar />
             <List />
         </div>
     )

@@ -20,6 +20,7 @@ const Navbar = () => {
     }
     return (
         <div style={{ width: 256}}>
+            <br />
              <Button type="primary" onClick={toggleCollapsed} style={{ marginBottom: 16, alignItems: 'flex-start', display: 'flex' }}>
           {React.createElement(collapsed ? MenuUnfoldOutlined : MenuFoldOutlined)}
         </Button>
