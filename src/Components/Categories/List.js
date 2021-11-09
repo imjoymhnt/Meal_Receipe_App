@@ -21,12 +21,13 @@ const List = () => {
             <Col style={{ display: 'inline-flex', justifyContent: 'center', alignItems: 'center'}} xs={20} sm={24} md={8} lg={6} xl={6}>
                     <Navbar />
                 </Col>
-            {categories.map((category) => (
-            <Col style={{ display: 'inline-flex', justifyContent: 'center', alignItems: 'center'}} xs={20} sm={24} md={8} lg={6} xl={6}>
+            {categories ? categories.map((category) => (
                 
-                <SingleCategory category={category} />
-            </Col>
-            ))}
+                <Col style={{ display: 'inline-flex', justifyContent: 'center', alignItems: 'center'}} xs={20} sm={24} md={8} lg={6} xl={6}>
+                    
+                    <SingleCategory category={category} />
+                </Col>
+                )) : <Skeleton />}
             </Row>
         </div>
     )
